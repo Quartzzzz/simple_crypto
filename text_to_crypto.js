@@ -155,7 +155,7 @@ const convertirLettreCrypto = function(lettre) {
 	} return lettreCrypto;
 }
 
-
+// Convertir un texte en crypto
 const convertirTextCrypto = function(text) {
 	let textInv = "";
   let textCrypto = "";
@@ -168,23 +168,8 @@ const convertirTextCrypto = function(text) {
 
 
 console.log(convertirTextCrypto("Je suis un lutin")); // "„-/=]≈„=≈Ô-=Ô≈!:"
+console.log(convertirTextCrypto("1492, Christophe Colomb decouvre l'Amerique")); // "!=#-$!å&e]≈!$Á=.§!è≈éå.].§≈!ùK./Ô-$ù§≈^•Ë£¿"
+console.log(convertirTextCrypto("Un dragon nous poursuit !")); // "%≈/-=Ô$=.K≈Ô=.„≈„.à&$è≈„="
 
 
-
-
-
-
-
-// Réassembler les lettres d'un texte dans l'ordre initial
-
-//const reverseText = function(textInv) {
-//	let textInit = "";
-//	let char = textInv.split("");
-//	for (let i = textInv.length-1; i >= 0; --i) {
-//		textInit += char[i];
-//	}
-//	return textInit
-//}
-//
-//console.log(reverseText("nitul nu sius ej")); // "je suis un lutin"
 
