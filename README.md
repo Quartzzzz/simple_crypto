@@ -1,2 +1,2 @@
 # Simple Crypto
-This a simple crypto using basic algorithm
+This a simple crypto using basic algorithms
