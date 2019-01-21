@@ -18,24 +18,40 @@
 	</header>
 	<div class="container">
 		<div class="module encrypt">
-			<div class="module-area module-title">
-				<h2>Encrypt your message:</h2>
-			</div>
-			<div class="module-area input-area">
-				<textarea id="text" class="text-area">Enter your message here</textarea>
-				<!-- <input id="text" type="text" name="" class="input-field"> -->
-				<button id="button" type="button" onclick="convertirTextCrypto()">Submit</button>
-				<p id="encryption"></p>
+			<div class="module-area">
+				<div class="module-title">
+					<h2>Encrypt your message:</h2>
+				</div>
+				<div class="input-area">
+					<textarea id="text" class="text-area">Enter your message here</textarea>
+					<button id="button" type="button" onclick="convertirTextCrypto()">Submit</button>
+					<div class="module-title">
+						<h2>Your encrypted message:</h2>
+					</div>
+					<p id="encryption"></p>
+				</div>				
 			</div>
 		</div>
-		<div class="module decode">
-			<div class="module-title module-area">
-				<h2>Decode your message:</h2>
+		<div class="module decode">	
+			<div class="module-area">
+				<div class="module-title">
+					<h2>Decode your message:</h2>
+				</div>
+				<div class="input-area">
+					<textarea id="text" class="text-area">Enter your encryption here</textarea>
+					<button id="button" type="button" onclick="convertirTextCrypto()">Submit</button>
+					<div class="module-title">
+						<h2>Your decrypted message:</h2>
+					</div>
+					<p id="encryption"></p>
+				</div>												
 			</div>
-			<!-- Insert relevant HTML form JS -->
 		</div>		
 	</div>
 	<script type="text/javascript">
+	// Début du script pour crypter un message
+	//
+	//
 	// Inverser l'ordre des lettres dans le texte 
 const inverseText = function(text) {
 	let textInv = "";
@@ -204,6 +220,20 @@ const convertirTextCrypto = function() {
     textCrypto += convertirLettreCrypto(lettre);
   } document.getElementById("encryption").innerHTML = textCrypto;
 }
+//
+//
+// Fin du cript pour crypter un message
+//
+//
+// Début du script pour décrypter un message
+//
+//
+
+
+
+
+
+
 		
 	</script>
 </body>

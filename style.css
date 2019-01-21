@@ -83,15 +83,18 @@ body {
 	border: 2px solid black;
 }
 .module-area {
-	margin: 5% 20% 0 20%;
+	padding: 5% 20% 0 20%;
+	height: 80%;
 }
 .module-title {	
 	font-size: 2em;
 }
 .text-area {
 	display: block;
-	height: 4em;
+	height: 30vh;
+	width: 100%;
 }
+
 
 
 
