@@ -75,10 +75,11 @@ body {
 	display: flex;	
 	padding: 0.5em;
 	padding-bottom: 1em;
-	border-bottom: 1px dotted white;
+	border-bottom: 2px dotted white;
 }
 .main-title {
 		font-size: 4em;
+		margin-left: 0.4em;
 }
 .slogan {
 	margin-left: auto;
