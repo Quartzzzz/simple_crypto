@@ -2,7 +2,11 @@
 	font-family: Earth_orbiter;
 	src: url("fonts/earth_orbiter/earthorbiter.ttf");
 }
-
+@font-face {
+	font-family: VCR;
+	src: url("fonts/VCR_OSD_MONO_1.001.ttf");
+}
+	
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -65,20 +69,27 @@ body {
 
 /*HEADER STYLES*/
 .header {
-	font-family: Earth_orbiter;
+	font-family: VCR;
 	color: white;
 	background-color: black;
 	display: flex;	
 	padding: 0.5em;
-
+	padding-bottom: 1em;
+	border-bottom: 1px dotted white;
 }
 .main-title {
 		font-size: 4em;
-
 }
 .slogan {
 	margin-left: auto;
 	font-size: 2em;	
+	display: flex;
+	flex-direction: column;
+}
+.slogan > p ~ p {
+	font-size: 0.5em;
+	margin-left: auto;
+	margin-top: auto;
 }
 
 /*CONTENT*/
@@ -88,32 +99,45 @@ body {
 }
 .module {
 	width: 50%;
-	border: 2px solid black;
-	background-color: #282929;
+
+	background-color: black;
 	color: white;
 }
 .module-area {
 	height: 80%;
-	background-color: #444545;
-	margin: 5% 10% 0 10% ;
-	padding: 5%
+	background-color: black;
+	margin: 5% 5% 0 5% ;
+	padding: 5%;
+	border: 2px dotted white;
 }
-.module-title {	
+.module-title {
+	font-family: VCR;	
 	font-size: 2em;
 	padding-bottom: 0.5em;
+	text-transform: uppercase;
 }
 .text-area {
 	display: block;
-	height: 30vh;
+	height: 20vh;
 	width: 80%;
 	background-color: black;
-	color: white;
+	color: #1CEA1C;
+	font-family: VCR;
+	text-transform: uppercase;
 }
 .button {
 	margin-bottom: 1.5em;
+	font-family: VCR;
+	height: 3em;
+	font-size: 1em;
 }
-
-
+.output {
+	font-family: VCR;
+	color: #1CEA1C;
+}
+#decrypted {
+		text-transform: uppercase;
+}
 
 
 
