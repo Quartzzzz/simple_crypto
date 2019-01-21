@@ -24,7 +24,7 @@
 				</div>
 				<div class="input-area">
 					<textarea id="text" class="text-area">Enter your message here</textarea>
-					<button id="button" type="button" onclick="convertirTextCrypto()">Submit</button>
+					<button id="button" type="button" class="button" onclick="convertirTextCrypto()">Submit</button>
 					<div class="module-title">
 						<h2>Your encrypted message:</h2>
 					</div>
@@ -35,11 +35,11 @@
 		<div class="module decode">	
 			<div class="module-area">
 				<div class="module-title">
-					<h2>Decode your message:</h2>
+					<h2>Decrypt your message:</h2>
 				</div>
 				<div class="input-area">
 					<textarea id="crypt" class="text-area">Enter your encryption here</textarea>
-					<button id="button" type="button" onclick="convertirCryptoText()">Submit</button>
+					<button id="button" type="button" class="button" onclick="convertirCryptoText()">Submit</button>
 					<div class="module-title">
 						<h2>Your decrypted message:</h2>
 					</div>
@@ -396,12 +396,9 @@ const convertirCryptoText = function() {
     textDecoded += convertirCryptoLettre(symbCrypto);
   } document.getElementById("decrypted").innerHTML = textDecoded;
 }
-
-
-
-
-
-		
+//
+//
+// Fin du script pour décrypter un message		
 	</script>
 </body>
 </html>
